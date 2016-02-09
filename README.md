@@ -1,2 +1,2 @@
-# websharper.dojo.samples
-WebSharper sample for Dojo Toolkit 1.10
+# Websharper Dojo sample
+[WebSharper](http://websharper.com/) sample for [Dojo Toolkit](http://dojotoolkit.org/) 1.10
