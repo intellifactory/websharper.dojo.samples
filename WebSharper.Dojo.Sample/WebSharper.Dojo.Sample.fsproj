@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
@@ -16,6 +16,7 @@
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +38,7 @@
     <Name>WebSharper.Dojo.Sample</Name>
     <RootNamespace>WebSharper.Dojo.Sample</RootNamespace>
     <AssemblyName>WebSharper.Dojo.Sample</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
@@ -51,74 +52,74 @@
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="IntelliFactory.Xml">
-      <HintPath>..\packages\IntelliFactory.Xml.0.6.63.95\lib\net40\IntelliFactory.Xml.dll</HintPath>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\packages\FSharp.Core.4.5.2\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.Xml, Version=0.6.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\IntelliFactory.Xml.0.6.64.1\lib\net40\IntelliFactory.Xml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="WebSharper.Collections">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Collections.dll</HintPath>
+    <Reference Include="WebSharper.Collections, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Collections.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Control">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Control.dll</HintPath>
+    <Reference Include="WebSharper.Control, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Control.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Core">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Core.dll</HintPath>
+    <Reference Include="WebSharper.Core, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Core.JavaScript">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Core.JavaScript.dll</HintPath>
+    <Reference Include="WebSharper.Core.JavaScript, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Core.JavaScript.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Dojo">
-      <HintPath>..\packages\WebSharper.Dojo.3.6.7.118\lib\net40\WebSharper.Dojo.dll</HintPath>
+    <Reference Include="WebSharper.Dojo, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.Dojo.4.5.0.128\lib\net461\WebSharper.Dojo.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Dojo.Provider">
-      <HintPath>..\packages\WebSharper.Dojo.3.6.7.118\lib\net40\WebSharper.Dojo.Provider.dll</HintPath>
+    <Reference Include="WebSharper.Dojo.Provider, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.Dojo.4.5.0.128\lib\net461\WebSharper.Dojo.Provider.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Html.Client">
-      <HintPath>..\packages\WebSharper.Html.3.6.6.18\lib\net40\WebSharper.Html.Client.dll</HintPath>
+    <Reference Include="WebSharper.Html.Client, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.Html.4.5.0.142\lib\net461\WebSharper.Html.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Html.Server">
-      <HintPath>..\packages\WebSharper.Html.3.6.6.18\lib\net40\WebSharper.Html.Server.dll</HintPath>
+    <Reference Include="WebSharper.Html.Server, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.Html.4.5.0.142\lib\net461\WebSharper.Html.Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.InterfaceGenerator">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.InterfaceGenerator.dll</HintPath>
+    <Reference Include="WebSharper.InterfaceGenerator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.InterfaceGenerator.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.JavaScript">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.JavaScript.dll</HintPath>
+    <Reference Include="WebSharper.JavaScript, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.JavaScript.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.JQuery">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.JQuery.dll</HintPath>
+    <Reference Include="WebSharper.JQuery, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.JQuery.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Main">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Main.dll</HintPath>
+    <Reference Include="WebSharper.Main, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Main.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Sitelets">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Sitelets.dll</HintPath>
+    <Reference Include="WebSharper.Sitelets, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Sitelets.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebSharper.Web">
-      <HintPath>..\packages\WebSharper.3.6.9.229\lib\net40\WebSharper.Web.dll</HintPath>
+    <Reference Include="WebSharper.Web, Version=4.5.0.0, Culture=neutral, PublicKeyToken=dcd983dec8f76a71">
+      <HintPath>..\packages\WebSharper.4.5.0.290\lib\net461\WebSharper.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -187,11 +188,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\WebSharper.3.6.9.229\build\WebSharper.targets" Condition="Exists('..\packages\WebSharper.3.6.9.229\build\WebSharper.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\WebSharper.3.6.9.229\build\WebSharper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WebSharper.3.6.9.229\build\WebSharper.targets'))" />
+    <Error Condition="!Exists('..\packages\WebSharper.FSharp.4.5.0.290\build\WebSharper.FSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WebSharper.FSharp.4.5.0.290\build\WebSharper.FSharp.targets'))" />
   </Target>
+  <Import Project="..\packages\WebSharper.FSharp.4.5.0.290\build\WebSharper.FSharp.targets" Condition="Exists('..\packages\WebSharper.FSharp.4.5.0.290\build\WebSharper.FSharp.targets')" />
 </Project>
